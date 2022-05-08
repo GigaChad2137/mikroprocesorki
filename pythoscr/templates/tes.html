@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+#test{
+background-color:WhiteSmoke;
+padding-left:15px;
+}
+body{
+font-size:27px;
+font-family:Arial;
+}
+ input[type='radio'] { 
+     transform: scale(2); 
+ }
+input[type=submit]
+{
+    /* your styles here, You can just increase its font size below*/
+    font-size: 30px; 
+    font-weight: bold;
+    font-family: ariel; 
+    background-color: white;
+}
+</style>
+</head>
+<body>
+<div id="test" style="height:800px;width:800px; margin-left:25%;">
+<form action="/" method="POST">
+
+<br>
+<label>
+AX:<input style="font-size:27px;width:25%;"  type="text" name="ax" value="{{ax}}" required></input></label><br><br>
+<label>
+BX:<input style="font-size:27px;width:25%;"  type="text" name="bx" value="{{bx}}" required></input></label><br><br>
+<label>
+CX:<input style="font-size:27px;width:25%;"  type="text" name="cx"  value="{{cx}}"required></input></label><br><br>
+<label>
+DX:<input style="font-size:27px;width:25%;"  type="text" name="dx"  value="{{dx}}"required></input></label><br><br>
+<div style="padding:60px; width:440px;">
+FROM<br>
+<input type="radio" name="z" value="ax" required checked> AX </input><br>
+<input type="radio" name="z"  value="bx"required> BX </input><br>
+<input type="radio" name="z" value="cx" required> CX </input><br>
+<input type="radio" name="z" value="dx" required> DX </input><br>
+<br>
+
+TO<br>
+<input type="radio" style="padding-left:320px; padding-top:-180px;" name="do" value="ax" required checked> AX </input><br>
+<input type="radio" style="padding-left:320px; padding-top:-180px; "name="do" value="bx"  required > BX </input><br>
+<input type="radio" style="padding-left:320px; padding-top:-180px; "name="do" value="cx" required> CX </input><br>
+<input type="radio" style="padding-left:320px; padding-top:-180px; "name="do" value="dx" required> DX </input><br>
+
+<label style="padding-left:400px;">
+<input type="submit" value="mov"></input>
+
+</label>
+</form>
+</div>
+</div>
+</body>
+</html>
